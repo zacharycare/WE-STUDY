@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "page1": "/pages/page1/home/home",
+    "page3": "/pages/page3/home/home"
+  }
+}

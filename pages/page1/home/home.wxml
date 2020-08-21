@@ -1,0 +1,5 @@
+<!--pages/page1/home/home.wxml-->
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">首页</view>
+</cu-custom>
+<text>pages/page1/home/home.wxml</text>

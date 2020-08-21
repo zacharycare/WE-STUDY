@@ -1,0 +1,23 @@
+<!--pages/index/index.wxml-->
+<page1 wx:if="{{PageCur=='page1'}}"></page1>
+<page3 wx:if="{{PageCur=='page3'}}"></page3>
+<view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action" bindtap="NavChange" data-cur="page1">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/basics{{PageCur=='page1'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='page1'?'text-green':'text-gray'}}">首页</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="component">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/component{{PageCur=='component'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='component'?'text-green':'text-gray'}}">预约</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="page3">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/plugin{{PageCur=='page3'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='page3'?'text-green':'text-gray'}}">我的</view>
+  </view>
+</view>

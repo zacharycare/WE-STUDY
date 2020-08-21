@@ -1,0 +1,74 @@
+<!--pages/page3/personInfo/personInfo.wxml-->
+<cu-custom bgColor="bg-gradual-red" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">个人资料</view>
+</cu-custom>
+<view class="cu-list menu sm-border">
+    <view class="cu-item arrow">
+      <view class="content">
+        <text class="text-grey">头像</text>
+      </view>
+      <view class="action">
+        <view class="cu-avatar round sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10004.jpg);"></view>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content">
+        <text class="text-grey">昵称</text>
+      </view>
+      <view class="action">
+        <text class="text-grey text-sm">Zachary</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content">
+        <text class="text-grey">性别</text>
+      </view>
+      <view class="action">
+        <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+          <view class="picker text-grey">
+            {{index?picker[index]:'男'}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content">
+        <text class="text-grey">个签</text>
+      </view>
+      <view class="action">
+        <text class="text-grey text-sm">不知道这个是什么签名</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content">
+        <text class="text-grey">职业</text>
+      </view>
+      <view class="action">
+        <text class="text-grey text-sm">不知道</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <navigator class="content" hover-class="none" url="/pages/page3/about/about" open-type="navigate">
+        <text class="cuIcon-discoverfill text-orange"></text>
+        <text class="text-grey">Navigator 跳转</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content">
+        <text class="cuIcon-tagfill text-red"></text>
+        <text class="text-grey">标签</text>
+      </view>
+      <view class="action">
+        <view class="cu-tag round bg-orange light">音乐</view>
+        <view class="cu-tag round bg-olive light">电影</view>
+        <view class="cu-tag round bg-blue light">旅行</view>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content" bindtap="feedBack">
+        <text class="cuIcon-circlefill text-grey"></text>
+        <text class="text-grey">建议/反馈</text>
+      </view>
+    </view>
+  </view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-toast": "/dist/toast/index",
+    "van-count-down": "/dist/count-down/index"
+  }
+}
